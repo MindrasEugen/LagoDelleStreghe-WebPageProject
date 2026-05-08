@@ -105,7 +105,7 @@ h2{
     padding: 20px;
 }
 
-span#icons{
+div#icons{
     padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
@@ -119,7 +119,7 @@ span#icons{
     background-color:rgba(163, 248, 163, 0.493);
 }
 
-span#icons .icons-container h3{
+div#icons .icons-container h3{
     text-align: center;
 }
 
@@ -130,7 +130,7 @@ span#icons .icons-container h3{
     padding: 10px;
 }
 
-span#img-sentiero{
+figure#img-sentiero{
     width: 30%;
     margin: 0;
     padding:30px;
@@ -173,7 +173,7 @@ p.mappa__sentiero{
     padding: 0;
 }
 
-section#DaSapere span ul{
+section#DaSapere div ul{
     padding: 30px;
     text-align: left;
     font-family: quicksand, sans-serif;
@@ -287,8 +287,7 @@ footer{
     color: white;
 }
 
-name{
-    font-weight: bold;
+footer small strong{
     color:bisque;
 }
 

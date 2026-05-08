@@ -141,8 +141,7 @@ footer{
     color: white;
 }
 
-name{
-    font-weight: bold;
+footer small strong{
     color:bisque;
 }
 

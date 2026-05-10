@@ -10,6 +10,14 @@
     padding:0;
 }
 
+figcaption{
+    border: 1px solid black;
+    background-color: rgba(179, 179, 179, 0.596);
+    font-family: Vollkorn, serif;
+    font-style: italic;
+    font-size: small;
+}
+
 
 
 /* HEADER */
@@ -21,7 +29,7 @@ header{
     background-image: url("https://img.fotocommunity.com/alpe-devero-il-lago-delle-streghe-65bb159e-7246-434e-b939-e069057396de.jpg?height=1080");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px -400px;
+    background-position: 0px -250px;
     background-attachment: fixed;
     border-bottom: 3px solid black;
 }
@@ -66,22 +74,27 @@ h1{
     color:aliceblue;
     line-height: 450px;
     font-family: rye, cursive;
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: 400;
 }
 
+
 /* MAIN */
 
+/*//// INTRO ////*/
+
+
 main{
-    width: 90%;
+    width: 100%;
     text-align:center;
     margin: 0 auto;
+    padding: 0 5em;
 }
 
 h2{
     padding: 50px;
     font-family: rye, cursive;
-    font-size:3em;
+    font-size:3rem;
     font-weight: 400;
     text-decoration: underline;
     text-align: left;
@@ -89,7 +102,9 @@ h2{
 
 #img-crampiolo{
     width: 40%;
+    height: auto;
     float: right;
+    padding-left: 1.2em;
 }
 
 .crampiolo{
@@ -98,16 +113,23 @@ h2{
 }
 
 .intro-text{
-    width: 60%;
+    width: 100%;
     text-align: left;
     font-family: quicksand, sans-serif;
-    font-size: 1.2em;
-    padding: 20px;
+    font-size: 1.2rem;
+    padding: 1.2em;
 }
+
+
+/* INTRO */
+
+/*//// SENTIERO ////*/
+
 
 div#icons{
     padding-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 3px;
 }
@@ -126,7 +148,7 @@ div#icons .icons-container h3{
 .IlSentiero-text{
     text-align: left;
     font-family: quicksand, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     padding: 10px;
 }
 
@@ -152,61 +174,74 @@ img.sentiero{
 
 
 
-article#mappa-sentiero{
+p#mappa-sentiero{
     margin: 0;
     padding: 0;
     background-image: url("../../assets/img/sentiero-lago1536x695.jpg");
-    padding:20% 0;
-    background-size: contain;
+    padding:24% 0;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     border: 3px solid black;
+    display:flex;
+    justify-content: center;
+    font-family: quicksand, sans-serif;
+    font-size: 1rem;
 }
 
-p.mappa__sentiero{
+/* p.mappa__sentiero{
     display:flex;
     justify-content: center;
     font-family: quicksand, sans-serif;
     font-size: 1.2em;
     margin: 0;
     padding: 0;
-}
+} */
 
-section#DaSapere div ul{
+
+/* SENTIERO */
+
+/* //// DA SAPERE //// */
+
+
+section#DaSapere ul{
     padding: 30px;
     text-align: left;
     font-family: quicksand, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-decoration: none;
     background-color:rgba(163, 248, 163, 0.493);
 }
 
-li.DaSapere-item{
+section#DaSapere ul li{
     text-decoration: none;
     list-style: none;
     padding: 5px;
 }
 
-section#LaLeggenda{
+/* DA SAPERE */
+
+/* //// LA LEGGENDA //// */
+
+
+h2#LaLeggenda{
     background-image: url("https://archaeus.it/wp-content/uploads/2023/09/Strega-di-Bell.jpg");
-    padding:10% 0;
-    background-size: contain;
+    padding:20% 0;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     border: 3px solid black;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-h2.LaLeggenda{
     text-align: center;
     color: white;
     font-family: rye, cursive;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 400;
 }
+
 
 p.LaLeggenda-text{
     text-align: left;
@@ -215,17 +250,23 @@ p.LaLeggenda-text{
     padding: 8px;
 }
 
+
+/* LA LEGENDA */
+
+/* ////DA VISITARE//// */
+
+
 h3{
     text-align: left;
     color: black;
     font-family: rye, cursive;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 400;
     padding-bottom: 20px;
 }
 
 #img-PNAV{
-    width: 25%;
+    width: 30%;
     float: left;
     padding: 30px;
     padding-left: 0;
@@ -251,44 +292,66 @@ h3{
 .DaVisitare-text{
     text-align: left;
     font-family: quicksand, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     padding: 20px;
 }
 
+
+
+/* DA VISITARE */
+
+/* ////BUTTON LAGO DELLE FATE//// */
+
+
+
 a.link_lagodellefate{
+    display:block;
     text-decoration: none;
     color: white;
     border: 2px solid rgb(2, 57, 2);
     padding: 20px;
+    margin:150px 30% 100px ;
     background-color:rgb(2, 110, 2); 
     border-radius: 999999px;
     font-family: rye, cursive;
-    font-size: 1em;
+    font-size: 1rem;
     box-shadow: 1px 1px 5px rgb(2, 110, 2);
 }
 
-#lagodellefate{
+/* #lagodellefate{
     display: flex;
     justify-content: center;
     padding: 50px 0 100px 0;
-}
+} */
 
 
-/* FOOTER */
+
+/* BUTTON LAGO DELLE FATE */
+
+/*//// FOOTER ////*/
+
+
 
 footer{
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width:100%;
     height: 100px;
     background-color: rgb(1, 47, 1);
     color: white;
 }
 
-footer small strong{
+footer p{
+    font-family: Vollkorn, serif;
+    font-size: small;
+}
+
+footer p strong{
     color:bisque;
 }
 
+/* FOOTER */
 

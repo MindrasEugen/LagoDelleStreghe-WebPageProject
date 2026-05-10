@@ -12,6 +12,9 @@
 /* ////HEADER//// */
 
 header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 500px;
     background-image: url("../../assets/img/lagodellefate.jpg");
@@ -25,7 +28,7 @@ header{
 h1{
     text-align:center;
     color:aliceblue;
-    line-height: 450px;
+    /* line-height: 450px; */
     font-family: rye, cursive;
     font-size: 4rem;
     font-weight: 400;
@@ -184,6 +187,7 @@ footer{
 footer>p{
     font-family: Vollkorn, serif;
     font-size: small;
+    text-align: center;
     padding:0;
     margin:0;
 }
@@ -193,5 +197,43 @@ footer>p>strong{
 }
 
 /* FOOTER */
+
+/* ////MEDIA QUERY//// */
+
+@media screen and (max-width:768px){
+    html{
+        font-size:12px;
+    }
+
+    header{
+        width: 100%;
+    }
+    main{
+        padding: 4px;
+    }
+
+    div.form-container{
+        padding: 0;
+    }
+
+    p.field{
+        padding: 10px;
+    }
+
+    div.form-container{
+        width: 95%;
+    }
+
+    a.link_lagodellestreghe{
+        padding: 10px;
+        margin: 15px;
+    }
+
+    footer>p{
+        font-size: 0.8rem;
+    }
+
+}
+
 
 

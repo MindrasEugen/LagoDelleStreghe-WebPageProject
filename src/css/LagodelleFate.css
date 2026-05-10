@@ -43,15 +43,15 @@ main{
     width:100%;
     text-align:center;
     margin: 0 auto;
-    padding: 5em;
-    padding-bottom: 0;
+    /* padding: 50px;
+    padding-bottom: 0; */
 }
 
 p{
     text-align: left;
     font-family: quicksand, sans-serif;
     font-size: 1.2rem;
-    padding: 20px;
+    padding: 20px 60px;
 }
 
 
@@ -75,7 +75,7 @@ h2{
 }
 
 div.form-container{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     padding: 30px;
     border: 2px solid rgb(1, 47, 1);
@@ -86,7 +86,7 @@ div.form-container{
     border-radius: 10px;
 }
 
-#name, #email, #message{
+label, input, textarea{
     min-height: 2em;
     max-width: 18em;
     width:100%;
@@ -97,19 +97,20 @@ div.form-container{
     resize: vertical;
 }
 
+p.field{
+    padding:20px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    /* flex-wrap: wrap; */
+}
+
 label, input, textarea{
     display: inline;
     text-align: left;
     font-family: quicksand, sans-serif;
     font-size: 1em;
     font-weight: 500;
-}
-
-p.field{
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap: wrap;
 }
 
 p.field-submit{
@@ -216,8 +217,18 @@ footer>p>strong{
         padding: 0;
     }
 
+    label, input, textarea{
+        max-width: 20em;
+        
+    }
+
+    label, input, textarea{
+        display: block;
+    }
+
     p.field{
-        padding: 10px;
+        padding: 0 10%;
+        flex-wrap: wrap;
     }
 
     div.form-container{

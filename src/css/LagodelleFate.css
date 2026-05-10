@@ -75,7 +75,7 @@ h2{
 }
 
 div.form-container{
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     padding: 30px;
     border: 2px solid rgb(1, 47, 1);
@@ -110,7 +110,7 @@ label, input, textarea{
     text-align: left;
     font-family: quicksand, sans-serif;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 900;
 }
 
 p.field-submit{

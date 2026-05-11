@@ -266,10 +266,6 @@ footer>p>strong{
 
     label, input, textarea{
         max-width: 20em;
-        
-    }
-
-    label, input, textarea{
         display: block;
     }
 

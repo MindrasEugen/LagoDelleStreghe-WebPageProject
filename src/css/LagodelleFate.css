@@ -54,6 +54,35 @@ p{
     padding: 20px 50px;
 }
 
+figure.img-lagodellefate1{
+    width: 30%;
+    margin: 0;
+    padding:30px;
+    padding-left: 50px;
+    float: left;
+}
+
+figure.img-lagodellefate2{
+    width: 30%;
+    margin: 0;
+    padding:30px;
+    padding-right: 50px;
+    float: right;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+figcaption{
+    border: 2px solid black;
+    background-color: rgba(179, 179, 179, 0.596);
+    font-family:Vollkorn, serif;
+    font-style: italic;
+    font-size: small;
+}
+
 
 /* MAIN */
 
@@ -201,7 +230,7 @@ footer>p>strong{
 
 /* ////MEDIA QUERY//// */
 
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
     html{
         font-size:12px;
     }
@@ -225,6 +254,12 @@ footer>p>strong{
         padding: 10px 20px;
     }
 
+    figure.img-lagodellefate1, figure.img-lagodellefate2{
+        float: none;
+        width: 100%;
+        padding: 20px;
+    }
+
     div.form-container{
         padding: 0;
     }
@@ -239,7 +274,7 @@ footer>p>strong{
     }
 
     p.field{
-        padding: 0 10%;
+        padding: 10px 10%;
         flex-wrap: wrap;
     }
 
